@@ -1,0 +1,51 @@
+{{#> layout/base }}
+
+{{#*inline "main-block"}}
+        <main class="content">
+            <section class="profile">
+                 <h2>Profile</h2>
+                
+               <section class="first_name">
+                   <p>First Name</p>
+                       <input class="profile_button_form" type="text" required placeholder="Jhon">
+               </section>
+               
+               <section class="last_name">
+                    <p>Last  Name</p>
+                        <input class="profile_button_form" type="text" required placeholder="Doe">
+                </section>
+                
+                 <section class="E-mail">
+                    <p>E-mail</p>
+                        <input class="profile_button_form" type="email" required placeholder="xxx@xxx">
+                </section>
+                
+                 <section class="phone">
+                    <p>Phone</p>
+                   <input class="profile_button_form" type="number" required placeholder="+_(___)___-__-__">
+                </section>
+                
+                 <section class="b_day">
+                    <p>Date of Birth</p>
+                        <input class="profile_button_form" type="date" required placeholder="DD/MM/YYYY">
+                </section>
+            
+                <section class="male">
+                    <p>Sex</p>
+                        <input class="male_form" type="radio" name="sex">  Male
+                </section>
+                
+               <section class="female">
+                   <input class="female_form" type="radio" name="sex" >  Female
+                </section>
+                
+                <section class="submit">
+                     <a  href="">SUBMIT</a>
+                </section>
+            </section>
+        
+        </main>
+        
+{{/inline}}
+
+{{/layout/base }}

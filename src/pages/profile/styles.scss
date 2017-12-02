@@ -1,0 +1,91 @@
+body{
+     background-color: #f7f9fc;
+    margin: 0;
+ }
+ 
+ header{
+     padding: 80px 1019px 77px 224px;
+ }
+ 
+ h1{   
+     margin: 0;
+ }
+ 
+ h2{
+     margin-left: 98px;
+     padding-top: 53px;
+     padding-bottom: 40px;
+     border-bottom: 3px solid #eeeeee;
+     width: 724px;
+     font-size: 30px;   
+ }
+ 
+ .content{
+     padding: 0 224px 105px 224px;
+ }
+ 
+ .profile{
+     width: 920px;
+     height: 1020px;
+     background-color: white;   
+ }
+ 
+ .first_name, .last_name, .E-mail, .phone,.b_day, .male, .female{
+    display: block;
+    margin-left: 295px;
+     margin-top: 20px;
+     font-size: 20px;
+     
+ }
+ 
+ .profile_button_form{
+     width: 365px;
+     height: 55px;
+     padding-left: 30px;
+     background-color: #f7f9fc;
+     outline-color: #7d89cd;
+     border: 0;
+     font-size: 20px; 
+     margin-top: -10px;
+ }
+ 
+ .profile_button_form:hover{
+     border: 1px solid #f1f1f1;
+ }
+ 
+ a{
+     text-decoration: NONE;
+     margin-left: 330px;
+     font-size: 20px;   
+ }
+ 
+ a:hover{ 
+     color: blue;
+ }
+ 
+ .submit{
+     margin-top: 65px;
+ }
+ 
+ footer{
+     width: 1400px;
+     height: 160px;
+     background-color: #5c6bc0;
+ }
+ 
+ .footer_text{
+     margin: 0;
+     padding: 70px 630px 65px 635px;
+     font-size: 26px;
+     color: #4a569a;
+ }
+
+ 
+
+
+
+
+
+
+
+
