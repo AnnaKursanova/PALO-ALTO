@@ -121,3 +121,59 @@ h1{
      color: #4a569a;
  }
 
+
+@media (max-width: 1023px) {
+    .article-text {
+    width: 718px;
+    padding: 40px;
+    margin-bottom: 20px;
+
+    &__foto {
+        width: 718px;
+        height: 404px;
+    }
+
+    &__text_header {
+        font-size: 30px;
+    }
+}
+}
+
+@media (max-width: 767px) {
+    .article-text {
+    width: 400px;
+    padding: 25px;
+    margin-bottom: 20px;
+
+    &__foto {
+        width: 400px;
+        height: 224px;
+    }
+
+    &__text_header {
+        font-size: 24px;
+    }
+
+    &__text_inf {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 36px;
+    }
+
+
+    &__tag {
+        float: none;
+    }
+}
+}
+
+@media (max-width: 320px) {
+    .article-text {
+    width: 280px;
+
+    &__foto {
+        width: 280px;
+        height: 157px;
+    }
+}
+

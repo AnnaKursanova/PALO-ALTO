@@ -10,17 +10,21 @@ var path = {
         pages: './src/pages/**/*.hbs',
         partials: './src/partials/'
     },
+	png: './src/pages/**/*.png',
     dist: {
       css:  './dist/',
-      html: './dist/'
+      html: './dist/',
+	  png: './dist/'
     },
     watch: {
         css: './src/**/*.scss',
         html: './src/**/*.hbs'
     }
+	
+	
 };
 
-gulp.task('default', ['build', 'serve', 'watch']);
+gulp.task('default', ['build', 'serve', 'watch'] );
 
 gulp.task('css', function () {
   return gulp.src(path.css)
@@ -41,11 +45,17 @@ gulp.task('html', function () {
         .pipe(gulp.dest(path.dist.html));
 });
 
-gulp.task('build', ['html', 'css']);
+gulp.task('png', function (){
+		 return gulp.src(path.png)
+		  .pipe(gulp.dest(path.dist.png));
+		  });
+
+gulp.task('build', ['html', 'css', 'png']);
 
 gulp.task('watch', function () {
   gulp.watch(path.watch.css, ['css']);
   gulp.watch(path.watch.html, ['html']);
+  gulp.watch(path.watch.png, ['png']);
 });
 
 gulp.task('serve', ['watch'], function() {
@@ -56,3 +66,4 @@ gulp.task('serve', ['watch'], function() {
   });
   gulp.watch('dist/**').on('change', browserSync.reload);
 });
+
